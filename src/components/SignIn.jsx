@@ -8,6 +8,11 @@ const users = [
         password: "harsha123",
         name: "Harsha"
     },
+     {
+        email: "user@gmail.com",
+        password: "user123",
+        name: "User"
+    },
     {
         email: "rahul@gmail.com",
         password: "rahul123",
@@ -82,7 +87,7 @@ function SignIn() {
                             <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4">
                                 <input
                                     type="email"
-                                    placeholder="Email"
+                                    placeholder="Use 'user@gmail.com' for testing"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     className="w-full p-3 sm:p-4 bg-gray-700 rounded-md outline-none text-sm sm:text-base placeholder:text-gray-400"
@@ -90,7 +95,7 @@ function SignIn() {
                                 <div className="relative">
                                     <input
                                         type={showPassword ? "text" : "password"}
-                                        placeholder="Password"
+                                        placeholder="Use 'user123' for testing"
                                         value={password}
                                         onChange={(e) => setPassword(e.target.value)}
                                         className="w-full p-3 sm:p-4 bg-gray-700 rounded-md outline-none text-sm sm:text-base placeholder:text-gray-400"
